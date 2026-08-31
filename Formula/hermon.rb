@@ -12,6 +12,30 @@ class Hermon < Formula
     system "cargo", "install", *std_cargo_args
   end
 
+  service do
+    run [opt_bin/"hermon", "menubar"]
+    keep_alive true
+    run_type :immediate
+  end
+
+  def post_install
+    puts "
+    ─────────────────────────────────────────────────────────
+    hermon #{version} installed
+    ─────────────────────────────────────────────────────────
+
+    Get started:
+      hermon watch          # TUI monitor
+      hermon menubar        # Menu bar (requires X11 or Quartz display server)
+
+    For launch-at-login (recommended):
+      hermon menubar --install-login-item
+
+    To uninstall launch-at-login:
+      hermon menubar --uninstall-login-item
+    "
+  end
+
   test do
     assert_match "hermon #{version}", shell_output("#{bin}/hermon --version")
 
