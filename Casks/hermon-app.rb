@@ -1,6 +1,6 @@
 cask "hermon-app" do
-  version "0.2.0"
-  sha256 "80ed836b757e1e6a6c207a3030ff10c9227cf609ab57e1c63f372e55db668367"
+  version "0.3.0"
+  sha256 "b3b3d1e9ef0ea0957e5e65d14d24a9186b541c5dfc8ab34d26afc70274f9e2dc"
 
   url "https://github.com/DrazThan/hermon/releases/download/v#{version}/Hermon.app.zip"
   name "Hermon"
