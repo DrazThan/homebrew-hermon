@@ -1,8 +1,8 @@
 class Hermon < Formula
-  desc "Live monitor deck for Hermes, Claude Code, and OpenCode agent sessions"
+  desc "Live monitor deck for Hermes, Claude Code, Codex, Grok, Gemini CLI, and OpenCode agent sessions"
   homepage "https://github.com/DrazThan/hermon"
-  url "https://github.com/DrazThan/hermon/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "448c6d48e04972297e05d75156cf0cca212f6e799c1abbfea92a1b7ccea8fc00"
+  url "https://github.com/DrazThan/hermon/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "a7e06a200f37888e0681ebf6524d6f662018ef6d19b98ed2c81ea9b7aaaffde2"
   license "MIT"
   head "https://github.com/DrazThan/hermon.git", branch: "main"
 
