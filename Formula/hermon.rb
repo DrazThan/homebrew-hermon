@@ -1,8 +1,8 @@
 class Hermon < Formula
-  desc "Live monitor deck for Hermes, Claude Code, Codex, Grok, Gemini CLI, and OpenCode agent sessions"
+  desc "Live monitor deck for AI agent sessions"
   homepage "https://github.com/DrazThan/hermon"
-  url "https://github.com/DrazThan/hermon/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "a7e06a200f37888e0681ebf6524d6f662018ef6d19b98ed2c81ea9b7aaaffde2"
+  url "https://github.com/DrazThan/hermon/archive/refs/tags/v0.4.1.tar.gz"
+  sha256 "5399953d0b2e313c4b766e02b25bf22c007e1fcb65e689c06a520d08a6d49871"
   license "MIT"
   head "https://github.com/DrazThan/hermon.git", branch: "main"
 
@@ -16,24 +16,6 @@ class Hermon < Formula
     run [opt_bin/"hermon", "menubar"]
     keep_alive true
     run_type :immediate
-  end
-
-  def post_install
-    puts "
-    ─────────────────────────────────────────────────────────
-    hermon #{version} installed
-    ─────────────────────────────────────────────────────────
-
-    Get started:
-      hermon watch          # TUI monitor
-      hermon menubar        # Menu bar (requires X11 or Quartz display server)
-
-    For launch-at-login (recommended):
-      hermon menubar --install-login-item
-
-    To uninstall launch-at-login:
-      hermon menubar --uninstall-login-item
-    "
   end
 
   test do
