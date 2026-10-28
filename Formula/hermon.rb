@@ -1,8 +1,8 @@
 class Hermon < Formula
   desc "Live monitor deck for AI agent sessions"
   homepage "https://github.com/DrazThan/hermon"
-  url "https://github.com/DrazThan/hermon/archive/refs/tags/v0.4.1.tar.gz"
-  sha256 "5399953d0b2e313c4b766e02b25bf22c007e1fcb65e689c06a520d08a6d49871"
+  url "https://github.com/DrazThan/hermon/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "c064331176f27989d96c93abb032da9a6f1a1c79ca5788bde22cbbdc1e3d449b"
   license "MIT"
   head "https://github.com/DrazThan/hermon.git", branch: "main"
 

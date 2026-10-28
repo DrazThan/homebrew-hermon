@@ -1,12 +1,13 @@
 cask "hermon-app" do
-  version "0.4.1"
-  sha256 "ffedb05cf3f5e501c2e68c13cab97702505a354b13254f27655b667d7c67febd"
+  version "0.5.0"
+  sha256 "d02e2d127c840ce2d45aa325bfd0f5d7ffeaa0775f8e739d95303c8fde550a1c"
 
   url "https://github.com/DrazThan/hermon/releases/download/v#{version}/Hermon.app.zip"
   name "Hermon"
   desc "Live monitor deck for AI agent sessions"
   homepage "https://github.com/DrazThan/hermon"
 
+  depends_on arch: :arm64
   depends_on :macos
 
   app "Hermon.app"
